@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bf739270-2f9a-4583-9b99-78c19d876e1e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.13.4/libexec" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1cvKeDApf75VgM4j3rUFP6vImfP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Go Test.TestTwoSum in github.com/tuyentv96/leetcode (1)">
+    <configuration name="go build 1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/1.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTwoSum in github.com/tuyentv96/leetcode (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/tuyentv96/leetcode" />
+      <pattern value="^TestTwoSum$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestTwoSum in github.com/tuyentv96/leetcode" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leetcode" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <package value="github.com/tuyentv96/leetcode" />
+      <pattern value="^TestTwoSum$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestTwoSum in github.com/tuyentv96/leetcode (1)" />
+        <item itemvalue="Go Test.TestTwoSum in github.com/tuyentv96/leetcode" />
+        <item itemvalue="Go Build.go build 1.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="384" y="87" key="#TestTwoSum_in_github.com/tuyentv96/leetcode" timestamp="1591405102447">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state x="384" y="87" key="#TestTwoSum_in_github.com/tuyentv96/leetcode/0.23.1396.877@0.23.1396.877" timestamp="1591405102447" />
+    <state x="100" y="123" width="1196" height="677" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1591405496940">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state x="100" y="123" width="1196" height="677" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1396.877@0.23.1396.877" timestamp="1591405496940" />
+    <state x="384" y="107" key="#go_build_1.go" timestamp="1591404571058">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state x="384" y="107" key="#go_build_1.go/0.23.1396.877@0.23.1396.877" timestamp="1591404571058" />
+    <state width="1354" height="231" key="GridCell.Tab.0.bottom" timestamp="1591406394293">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="231" key="GridCell.Tab.0.bottom/0.23.1396.877@0.23.1396.877" timestamp="1591406394293" />
+    <state width="1354" height="231" key="GridCell.Tab.0.center" timestamp="1591406394292">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="231" key="GridCell.Tab.0.center/0.23.1396.877@0.23.1396.877" timestamp="1591406394292" />
+    <state width="1354" height="231" key="GridCell.Tab.0.left" timestamp="1591406394292">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="231" key="GridCell.Tab.0.left/0.23.1396.877@0.23.1396.877" timestamp="1591406394292" />
+    <state width="1354" height="231" key="GridCell.Tab.0.right" timestamp="1591406394293">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="231" key="GridCell.Tab.0.right/0.23.1396.877@0.23.1396.877" timestamp="1591406394293" />
+    <state width="1354" height="286" key="GridCell.Tab.1.bottom" timestamp="1591406308608">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="286" key="GridCell.Tab.1.bottom/0.23.1396.877@0.23.1396.877" timestamp="1591406308608" />
+    <state width="1354" height="286" key="GridCell.Tab.1.center" timestamp="1591406308608">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="286" key="GridCell.Tab.1.center/0.23.1396.877@0.23.1396.877" timestamp="1591406308608" />
+    <state width="1354" height="286" key="GridCell.Tab.1.left" timestamp="1591406308607">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="286" key="GridCell.Tab.1.left/0.23.1396.877@0.23.1396.877" timestamp="1591406308607" />
+    <state width="1354" height="286" key="GridCell.Tab.1.right" timestamp="1591406308608">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state width="1354" height="286" key="GridCell.Tab.1.right/0.23.1396.877@0.23.1396.877" timestamp="1591406308608" />
+    <state x="199" y="100" key="SettingsEditor" timestamp="1591406603448">
+      <screen x="0" y="23" width="1396" height="877" />
+    </state>
+    <state x="199" y="100" key="SettingsEditor/0.23.1396.877@0.23.1396.877" timestamp="1591406603448" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/1_test.go</url>
+          <line>35</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
