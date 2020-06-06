@@ -33,6 +33,6 @@ func TestTwoSum(t *testing.T) {
 
 	for i, tc := range testCases {
 		got := twoSum(tc.nums, tc.target)
-		assert.Equalf(t, tc.want, got, "failed twoSum with i: %d", i)
+		assert.Equalf(t, tc.want, got, "failed calculate twoSum with i: %d", i)
 	}
 }
