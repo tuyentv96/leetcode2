@@ -1,4 +1,4 @@
-package leetcode
+package leetcode_test
 
 import (
 	"github.com/stretchr/testify/assert"
