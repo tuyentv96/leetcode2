@@ -6,32 +6,39 @@ import (
 )
 
 func longestPalindrome(s string) string {
-	runes := []rune(s)
-	length := len(runes)
-	if length <= 1 {
+	if len(s) <= 1 {
 		return s
 	}
-	maxRune := runes[0:1]
-	for i := 0; i < length-1; i++ {
-		tmpRune := findPalindrome(runes, i, i)
-		if len(tmpRune) > len(maxRune) {
-			maxRune = tmpRune
+
+	i := 0
+	maxlen := 0
+	begin := 0
+	for i = 0; i < len(s); i++ {
+		b, length := findPalindrome(s, i, i)
+		if length > maxlen {
+			begin = b
+			maxlen = length
 		}
-		if runes[i] == runes[i+1] {
-			tmpRune = findPalindrome(runes, i, i+1)
-			if len(tmpRune) > len(maxRune) {
-				maxRune = tmpRune
+
+		if i+1 < len(s) && s[i] == s[i+1] {
+			b, length := findPalindrome(s, i, i+1)
+			if length > maxlen {
+				begin = b
+				maxlen = length
 			}
 		}
 	}
-	return string(maxRune)
+
+	return s[begin : begin+maxlen]
 }
-func findPalindrome(subRune []rune, i, j int) []rune {
-	m, n := i-1, j+1
-	for ; m >= 0 && n <= len(subRune)-1 && subRune[m] == subRune[n]; m, n = m-1, n+1 {
-		println(m)
+func findPalindrome(subRune string, i, j int) (int, int) {
+	for i >= 0 && j < len(subRune) && subRune[i] == subRune[j] {
+		i--
+		j++
 	}
-	return subRune[m+1 : n]
+
+	b := i + 1
+	return b, j - b
 }
 
 func TestLongestPalindrome(t *testing.T) {
@@ -40,12 +47,8 @@ func TestLongestPalindrome(t *testing.T) {
 		want string
 	}{
 		{
-			s:    "babad",
-			want: "bab",
-		},
-		{
-			s:    "cbbd",
-			want: "bb",
+			s:    "bbcbbcd",
+			want: "cbc",
 		},
 	}
 
