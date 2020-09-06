@@ -105,7 +105,7 @@ func BenchmarkSearch(b *testing.B) {
 	b.Run("search", func(b *testing.B) {
 		b.Run("", func(b *testing.B) {
 			arr := []int{4, 5, 6, 7, 0, 1, 2}
-			target := 0
+			target := 1
 			for n := 0; n < b.N; n++ {
 				search(arr, target)
 			}
@@ -130,8 +130,8 @@ func TestSearchInRotatedArray(t *testing.T) {
 	}{
 		{
 			arr:    []int{4, 5, 6, 7, 0, 1, 2},
-			target: 0,
-			want:   4,
+			target: 1,
+			want:   5,
 		},
 	}
 
