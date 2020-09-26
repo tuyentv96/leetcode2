@@ -27,11 +27,10 @@ func TestMaxProfit(t *testing.T) {
 		want int
 	}{
 		{
-			arr:  []int{7, 1, 5, 3, 6, 4},
-			want: 7,
+			arr:  []int{3, 3, 5, 0, 0, 3, 1, 4},
+			want: 6,
 		},
 	}
-
 	for i, tc := range testCases {
 		got := maxProfit(tc.arr)
 		assert.Equalf(t, tc.want, got, "failed maxProfit with i: %d", i)
