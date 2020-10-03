@@ -2,79 +2,54 @@ package buy_stock_test
 
 import (
 	"github.com/stretchr/testify/assert"
+	"strconv"
+	"strings"
 	"testing"
 )
 
-func isAlphaNumeric(s uint8) bool {
-	if (s >= 'a' && s <= 'z') || (s >= 'A' && s <= 'Z') || (s >= '0' && s <= '9') {
-		return true
-	}
-
-	return false
-}
-
-func toLower(s uint8) uint8 {
-	if s >= 'A' && s <= 'Z' {
-		return s - 'A' + 'a'
-	}
-
-	return s
-}
-
-func isPalindrome(s string) bool {
-	if len(s) <= 1 {
-		return true
-	}
-
-	var left, right = 0, len(s) - 1
-	for left < right {
-		for left < right && !isAlphaNumeric(s[left]) {
-			left++
+func groupAnagrams(strs []string) [][]string {
+	m := make(map[string][]string)
+	count := [26]int{}
+	for _, str := range strs {
+		count = [26]int{}
+		for i := range str {
+			count[str[i]-'a'] += 1
 		}
 
-		for left < right && !isAlphaNumeric(s[right]) {
-			right--
+		keyBuilder := strings.Builder{}
+		for i := 0; i < 26; i++ {
+			keyBuilder.WriteString("#")
+			keyBuilder.WriteString(strconv.Itoa(count[i]))
 		}
 
-		if toLower(s[left]) != toLower(s[right]) {
-			return false
-		}
-
-		left++
-		right--
+		key := keyBuilder.String()
+		m[key] = append(m[key], str)
 	}
 
-	return true
+	var res [][]string
+	for _, group := range m {
+		res = append(res, group)
+	}
+
+	return res
 }
 
 func Test(t *testing.T) {
 	testCases := []struct {
-		s    string
-		want bool
+		arr  []string
+		want int
 	}{
 		{
-			s:    ".,",
-			want: true,
+			arr:  []string{"eat", "tea", "tan", "ate", "nat", "bat"},
+			want: 3,
 		},
 		{
-			s:    "A man, a plan, a canal: Panama",
-			want: true,
-		},
-		{
-			s:    "abba",
-			want: true,
-		},
-		{
-			s:    "abc",
-			want: false,
-		},
-		{
-			s:    "ab ba",
-			want: true,
+			arr:  []string{"duh", "ill"},
+			want: 2,
 		},
 	}
 	for i, tc := range testCases {
-		got := isPalindrome(tc.s)
-		assert.Equalf(t, tc.want, got, "failed isPalindrome with i: %d", i)
+		got := groupAnagrams(tc.arr)
+		assert.Equalf(t, tc.want, len(got), "failed groupAnagrams with i: %d", i)
 	}
 }
