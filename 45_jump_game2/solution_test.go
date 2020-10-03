@@ -14,19 +14,13 @@ func max(a int, b int) int {
 }
 
 func jump(nums []int) int {
-	if len(nums) > 0 && nums[0] == 0 {
-		return 0
-	}
-
-	if len(nums) == 1 {
-		return 1
-	}
-
 	var maxReach int
+	var lastReach int
 	var step int
 	for i := 0; i < len(nums); i++ {
-		if maxReach == i {
+		if lastReach < i {
 			step++
+			lastReach = maxReach
 		}
 
 		maxReach = max(maxReach, i+nums[i])
@@ -40,18 +34,18 @@ func Test45(t *testing.T) {
 		arr  []int
 		want int
 	}{
-		//{
-		//	arr:  []int{2, 3, 1, 1, 4},
-		//	want: 2,
-		//},
-		//{
-		//	arr:  []int{2, 1},
-		//	want: 1,
-		//},
-		//{
-		//	arr:  []int{0},
-		//	want: 0,
-		//},
+		{
+			arr:  []int{2, 3, 1, 1, 4},
+			want: 2,
+		},
+		{
+			arr:  []int{2, 1},
+			want: 1,
+		},
+		{
+			arr:  []int{0},
+			want: 0,
+		},
 		{
 			arr:  []int{1, 2},
 			want: 1,

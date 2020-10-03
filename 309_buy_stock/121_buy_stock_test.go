@@ -55,12 +55,8 @@ func maxProfit(prices []int) int {
 	var prevSell int
 
 	for i := 1; i < len(prices); i++ {
-		//buy[i] = max(buy[i-1], sell[i-2]-prices[i])
 		buy = max(buy, prevSell-prices[i])
-
 		prevSell = sell
-
-		//sell[i] = max(sell[i-1], buy[i-1]+prices[i])
 		sell = max(sell, buy+prices[i])
 	}
 	return sell
