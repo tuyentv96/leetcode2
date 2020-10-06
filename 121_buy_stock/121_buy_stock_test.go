@@ -26,6 +26,7 @@ func maxProfit(prices []int) int {
 
 	return max
 }
+
 func TestMaxProfit(t *testing.T) {
 	testCases := []struct {
 		arr  []int
