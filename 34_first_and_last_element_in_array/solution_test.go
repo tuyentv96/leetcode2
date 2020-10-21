@@ -10,20 +10,19 @@ func binarySearch(nums []int, target int) int {
 	high := len(nums) - 1
 	for low <= high {
 		mid := (low + high) / 2
-		if nums[mid] < nums[target] {
-			low++
+
+		if nums[mid] == target {
+			return mid
+		}
+
+		if target < nums[mid] {
+			high = mid - 1
 		} else {
-			high--
+			low = mid + 1
 		}
 	}
 
-	if low == len(nums) || nums[low] != target {
-		return
-	}
-}
-
-func searchRange(nums []int, target int) []int {
-
+	return -1
 }
 
 func Test(t *testing.T) {
